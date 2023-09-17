@@ -1,0 +1,69 @@
+---
+---
+<header>
+    <div class="banner">
+        <div>ADIR LANDES</div><div>-</div>
+        <div><a href="mailto:adirlandes@gmail.com">ADIRLANDES@GMAIL.COM</a></div><div>-</div>
+        <div>(201) 906 9329</div><div>-</div>
+        <div>ADIR LANDES</div><div>-</div>
+        <div><a href="mailto:adirlandes@gmail.com">ADIRLANDES@GMAIL.COM</a></div><div>-</div>
+        <div>(201) 906 9329</div><div>-</div>
+        <div>ADIR LANDES</div><div>-</div>
+        <div><a href="mailto:adirlandes@gmail.com">ADIRLANDES@GMAIL.COM</a></div><div>-</div>
+        <div>(201) 906 9329</div><div>-</div>
+        <div>ADIR LANDES</div><div>-</div>
+        <div><a href="mailto:adirlandes@gmail.com">ADIRLANDES@GMAIL.COM</a></div><div>-</div>
+        <div>(201) 906 9329</div><div>-</div>
+        <div>ADIR LANDES</div><div>-</div>
+        <div><a href="mailto:adirlandes@gmail.com">ADIRLANDES@GMAIL.COM</a></div><div>-</div>
+        <div>(201) 906 9329</div><div>-</div>
+        <div>ADIR LANDES</div><div>-</div>
+        <div><a href="mailto:adirlandes@gmail.com">ADIRLANDES@GMAIL.COM</a></div><div>-</div>
+        <div>(201) 906 9329</div><div>-</div>
+    </div>
+</header>
+
+<style>
+    @font-face {
+        font-family: "Avenir";
+        src: url('/fonts/avenir-next-condensed-demibold.ttf');
+    }
+    a:hover{
+    }
+    header{
+        position: relative;
+    }
+    .banner {
+        padding: 3px 0px 3px 0px;
+        background-image: linear-gradient(black, rgba(0,0,0,0.85));
+        backdrop-filter: blur(10px);
+        position: absolute;
+        overflow: hidden;
+        font-family: Avenir;
+        color: white;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2rem;
+        min-width: 200vw;
+        /* ADDED */
+        animation: bannermove 30s linear infinite;
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner:hover {
+        animation-play-state: paused;
+    }
+    @keyframes bannermove {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    .banner div {
+        white-space: nowrap;
+        padding-left: 20px;
+        /* just to ensure there is space between even on small devices */
+    }
+</style>
