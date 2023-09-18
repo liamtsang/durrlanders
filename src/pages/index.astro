@@ -56,6 +56,12 @@ import Layout from '../layouts/Layout.astro';
 		}
 	}
 	body, html {
+		/* Fallback */
+		height: 100vh;
+		width: 100vw;
+		max-height: 100vh;
+		max-width: 100vw;
+
 		height: 100svh;
 		width: 100svw;
 		max-height: 100svh;
@@ -63,6 +69,10 @@ import Layout from '../layouts/Layout.astro';
 		overflow: hidden;
 	}
 	.image-desktop-styled {
+		/* Fallback */
+		height: 100vh;
+		width: 100vw;
+
 		background-position: center;
 		background-size: cover;
 		background-position-x: 0;
@@ -73,7 +83,11 @@ import Layout from '../layouts/Layout.astro';
 		transition: background 0.15s ease-in;
 	}
 	.image-mobile-styled {
-		background-position: center;
+		/* Fallback */
+		height: 100vh;
+		width: 100vw;
+
+		background-position: bottom;
 		background-size: cover;
 		background-position-x: 0;
 		background-image: url("/images/mobile/1.jpg");
@@ -98,6 +112,10 @@ import Layout from '../layouts/Layout.astro';
 		}
 	}
 	img {
+		/* Fallback */
+		max-height: 100vh;
+		max-width: 100vw;
+
 		object-fit: cover;
 		max-height: 100svh;
 		max-width: 100svw;
