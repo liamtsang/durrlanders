@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
 		const desktopImages = [
 			"images/desktop/1.jpg",
 			"images/desktop/2.jpg",
-			"images/desktop/2.jpg",
+			"images/desktop/3.jpg",
 			"images/desktop/4.jpg",
 			"images/desktop/5.jpg",
 			"images/desktop/6.jpg",
@@ -26,7 +26,7 @@ import Layout from '../layouts/Layout.astro';
 		const mobileImages = [
 			"images/mobile/1.jpg",
 			"images/mobile/2.jpg",
-			"images/mobile/2.jpg",
+			"images/mobile/3.jpg",
 			"images/mobile/4.jpg",
 			"images/mobile/5.jpg",
 			"images/mobile/6.jpg",
@@ -50,16 +50,16 @@ import Layout from '../layouts/Layout.astro';
 			display: none;
 		}
 	}
-	@media only screen and (min-width: 600px) {	
+	@media only screen and (min-width: 601px) {	
 		#imageIdMobile {
 			display: none;
 		}
 	}
 	body, html {
-		height: 100dvh;
-		width: 100dvw;
-		max-height: 100dvh;
-		max-width: 100dvw;
+		height: 100vh;
+		width: 100vw;
+		max-height: 100vh;
+		max-width: 100vw;
 		overflow: hidden;
 	}
 	.image-desktop-styled {
@@ -68,8 +68,8 @@ import Layout from '../layouts/Layout.astro';
 		background-position-x: 0;
 		background-image: url("/images/desktop/1.jpg");
 		display: flex;
-		height: 100dvh;
-		width: 100dvw;
+		height: 100vh;
+		width: 100vw;
 		transition: background 0.15s ease-in;
 	}
 	.image-mobile-styled {
@@ -78,8 +78,8 @@ import Layout from '../layouts/Layout.astro';
 		background-position-x: 0;
 		background-image: url("/images/mobile/1.jpg");
 		display: flex;
-		height: 100dvh;
-		width: 100dvw;
+		height: 100vh;
+		width: 100vw;
 		transition: background 0.15s ease-in;
 	}
 	main {
@@ -99,7 +99,7 @@ import Layout from '../layouts/Layout.astro';
 	}
 	img {
 		object-fit: cover;
-		max-height: 100dvh;
-		max-width: 100dvw;
+		max-height: 100vh;
+		max-width: 100vw;
 	}
 </style>
