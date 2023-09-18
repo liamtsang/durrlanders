@@ -56,10 +56,10 @@ import Layout from '../layouts/Layout.astro';
 		}
 	}
 	body, html {
-		height: 100vh;
-		width: 100vw;
-		max-height: 100vh;
-		max-width: 100vw;
+		height: 100dvh;
+		width: 100dvw;
+		max-height: 100dvh;
+		max-width: 100dvw;
 		overflow: hidden;
 	}
 	.image-desktop-styled {
@@ -68,8 +68,8 @@ import Layout from '../layouts/Layout.astro';
 		background-position-x: 0;
 		background-image: url("/images/desktop/1.jpg");
 		display: flex;
-		height: 100vh;
-		width: 100vw;
+		height: 100dvh;
+		width: 100dvw;
 		transition: background 0.15s ease-in;
 	}
 	.image-mobile-styled {
@@ -78,8 +78,8 @@ import Layout from '../layouts/Layout.astro';
 		background-position-x: 0;
 		background-image: url("/images/mobile/1.jpg");
 		display: flex;
-		height: 100vh;
-		width: 100vw;
+		height: 100dvh;
+		width: 100dvw;
 		transition: background 0.15s ease-in;
 	}
 	main {
@@ -99,7 +99,7 @@ import Layout from '../layouts/Layout.astro';
 	}
 	img {
 		object-fit: cover;
-		max-height: 100vh;
-		max-width: 100vw;
+		max-height: 100dvh;
+		max-width: 100dvw;
 	}
 </style>
