@@ -21,7 +21,7 @@ Built with Astro
 > │   ├── pages/  
 > │   │   └── **index.astro**  
 
->e.g "images/desktop/8.jpg", and "images/mobile/8.jpg",
+  e.g "images/desktop/8.jpg", and "images/mobile/8.jpg",
 
 ##### 4. Push changes to GitHub using these commands. (let me know if you have trouble with this I can help)
 
